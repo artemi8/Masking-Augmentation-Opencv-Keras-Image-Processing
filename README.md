@@ -47,7 +47,7 @@ Happy Masking!
 4. OUTPUT_MASK_PATH   - Path to write the augmented mask images
 5. AUG_NUM            - Number of augmentation to be done per image
 6. TOTAL_IMGS         - Total images in the directory, will be helpful for tqdm to track the progress
-7. paths1 and paths2 image extension must as you have in your dataset for example ".jpg" or ".png".
+7. paths1 and paths2 image extension must be the extension in your dataset for example ".jpg" or ".png".
 
 ### Augmentation Operations Performed:
 1. Affine Transformation with rotation and shearing
