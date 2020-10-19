@@ -1,7 +1,7 @@
 # Masking-Augmentation-Opencv-Keras-Image-Processing
 Mask creation for segmentation tasks and Image augmentation pipeline with imaug and Keras's ImageDataGenerator
 
-# masking_op.py
+## masking_op.py
 This program helps the user to create custom segmentation maps
 
 ### File variables
@@ -37,5 +37,24 @@ Make sure that you satisfied the Prerequisite
 Exception Handling is in place for a MouseCallbackError which exists in pip installation of opencv but fixed in apt installed opencv, still not sure why it exists. If you haven't installed opencv yet then i would advise to install using this command for ubuntu users "sudo apt install libopencv-dev python3-opencv"
 It's okay if you have pip installed version that's why the exception handling is in place. 
 Happy Masking!
+
+## imgaug_augmentation.py
+
+### Augmentation program using imgaug library.
+1. IMG_PATH           - Path to the dataset directory of images
+2. MASK_PATH          - Path to the dataset of masks of the images
+3. OUTPUT_IMAGE_PATH  - Path to write the augmented images
+4. OUTPUT_MASK_PATH   - Path to write the augmented mask images
+5. AUG_NUM            - Number of augmentation to be done per image
+6. TOTAL_IMGS         - Total images in the directory, will be helpful for tqdm to track the progress
+7. paths1 and paths2 image extension must as you have in your dataset for example ".jpg" or ".png".
+
+### Augmentation Operations Performed:
+1. Affine Transformation with rotation and shearing
+2. Coarse Dropout
+3. Guassian Noise only for image
+
+imgaug library has much more heavy augmentation operations and more sophiticated functions for various necessities.[imguag documentation](https://imgaug.readthedocs.io/en/latest/index.html)
+
 
 
