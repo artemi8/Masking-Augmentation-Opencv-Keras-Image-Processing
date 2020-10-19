@@ -47,9 +47,9 @@ class Sketcher:
  
  
 # Define the path of the dataset and mask
-IMG_PATH = "dataset/images/leafs"
-MASK_OUTPUT_PATH = "dataset/masks/masks"
-MASK_INV = "mask_inv/"
+IMG_PATH = "DATASET DIRECTORY"
+MASK_OUTPUT_PATH = "MASK OUTPUT PATH"
+MASK_INV = "MASK INV DIRECTORY"
 
 
 BREAK_LIMIT = 10 # Program exits after every 20 images
