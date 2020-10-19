@@ -12,13 +12,13 @@ import cv2
 from pathlib import Path
 from tqdm import tqdm
 
-IMG_PATH = "dataset/images/leafs/"			# Path to the dataset directory
-MASK_PATH = "dataset/masks/masks/"			# Path to mask dataset directory
+IMG_PATH = "dataset/images/leafs/"		# Path to the dataset directory
+MASK_PATH = "dataset/masks/masks/"		# Path to mask dataset directory
 OUTPUT_IMAGE_PATH = "augmented/images/"		# Path to write the augmented images
 OUTPUT_MASK_PATH = "augmented/masks/"		# Path to write the augmented mask images
-AUG_NUM = 4  								# Number of augmentation to be done per image
-TOTAL_IMGS = 2 								# Total images in the directory, will be helpful for tqdm to track the progress
-i = 0 										# For naming the output images
+AUG_NUM = 4  					# Number of augmentation to be done per image
+TOTAL_IMGS = 2 					# Total images in the directory, will be helpful for tqdm to track the progress
+i = 0 						# For naming the output images
 paths1 = Path(IMG_PATH).glob("**/*.jpg")	# Generator to iterate through the directory of the dataset
 paths2 = Path(MASK_PATH).glob("**/*.jpg")
 
